@@ -1,0 +1,73 @@
+/* Income.css */
+  
+  .react-datepicker {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .react-datepicker__header {
+    background-color: #f7fafc; /* Light background */
+    border-bottom: 1px solid #e2e8f0; /* Gray border */
+  }
+  
+  .react-datepicker__current-month {
+    font-weight: bold; /* Bold current month text */
+  }
+  
+  .react-datepicker__day {
+    border-radius: 50%; /* Rounded days */
+    transition: background-color 0.3s; /* Smooth transition */
+  }
+  
+  .react-datepicker__day:hover {
+    background-color: #e2e8f0; /* Light hover effect */
+  }
+  
+  .react-datepicker__day--selected {
+    background-color: #3182ce; /* Selected day color */
+    color: white; /* White text for selected day */
+  }
+  
+  .react-datepicker__triangle {
+    display: none; /* Hide triangle */
+  }
+  .submit-btn{
+    background: rgb(34, 158, 24);
+    color: #fff;
+    border-radius: 7px;
+    margin-right: 1rem;
+   
+  }
+  .submit-btn a{ 
+    padding: 10px;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .table-auto {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table-auto th,
+  .table-auto td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ccc;
+  }
+  
+  .bg-gray-100 {
+    background-color: #f7fafc;
+  }
+  
+  .bg-gray-200 {
+    background-color: #edf2f7;
+  }
+  
+  .p-5 {
+    padding: 1.25rem;
+  }
+  

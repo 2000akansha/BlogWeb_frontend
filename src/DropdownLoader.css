@@ -1,0 +1,125 @@
+/* 
+   Based on / inspired by the helpful demo
+   found here: https://css-tricks.com/css-pie-timer/
+   This could probably be 'simplified' into less markup.
+   It would definitely benefit from the addition of a pre-processor.
+*/
+/* 
+.wrapper {
+  margin: 2em auto 0;
+  width: 50px;
+  height: 50px;
+  position: relative;    
+  background: rgb(252, 231, 166);
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  background: url('https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Toronto_Blue_Jays_logo.svg/1024px-Toronto_Blue_Jays_logo.svg.png') no-repeat;
+  background-size: cover;
+}
+
+.pie {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background: #954242;
+}
+
+.spinner {
+  border-radius: 125px 0 0 125px;
+  z-index: 200;
+  border-right: none;
+  transform-origin: right;
+  animation: spin 3s linear infinite;
+}
+
+.filler {
+  border-radius: 0 125px 125px 0;
+  z-index: 100;
+  border-left: none;
+  transform-origin: left;
+  animation: fill 3s linear infinite;
+  left: 50%;
+  opacity: 1;
+}
+
+.mask {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  z-index: 300;
+  background: rgb(252, 231, 166) url('https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Toronto_Blue_Jays_logo.svg/1024px-Toronto_Blue_Jays_logo.svg.png') no-repeat;
+  background-size: cover;
+}
+
+.mask.spin {
+  left: 0;
+  animation: mask-spin 3s linear infinite;
+}
+
+.mask.fill {
+  right: 0;
+  background-position: right;
+  animation: mask-fill 3s linear infinite;
+} */
+
+@keyframes spin {
+  0%      { opacity: 1;
+            transform: rotate(0deg); }
+  50%     { transform: rotate(360deg); }
+  74.999% { opacity: 1; }
+  75%     { opacity: 0;
+            transform: rotate(360deg); }
+  100%    { opacity: 0;
+            transform: rotate(0deg); }
+}
+
+@keyframes fill {
+  0%      { opacity: 0; }
+  24.999% { opacity: 0; }
+  25%     { opacity: 1; }
+  50%     { transform: rotate(0deg); }
+  100%    { transform: rotate(360deg); }
+}
+
+@keyframes mask-spin {
+  0%     { opacity: 1; }
+  24.99% { opacity: 1; }
+  25%    { opacity: 0; }
+  100%   { opacity: 0; }
+}
+
+@keyframes mask-fill {
+  0%        { opacity: 0; }
+  74.999%   { opacity: 0; }
+  75%       { opacity: 1; }
+  100%      { opacity: 1; }
+}
+
+.loading-state {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 10px solid #ddd;
+  border-top-color: #954242;
+  animation: loading 1s linear infinite;
+}
+@keyframes loading {
+  to {
+    transform: rotate(360deg);
+  }
+}

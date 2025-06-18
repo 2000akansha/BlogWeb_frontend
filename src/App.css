@@ -1,0 +1,313 @@
+.logo {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  display: block;
+  z-index: 100;
+  transition: all 250ms linear;
+}
+.modal-fullscreen {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* PostThoughtsPage.css */
+.white-text {
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input, textarea, select, button {
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+
+.modal-content {
+  width: 80%;
+  max-width: 1200px; /* Adjust based on your design */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.editor-wrapper {
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 8px;
+  min-height: 200px;
+  background-color: #fff;
+  color: #000;
+}
+
+.ProseMirror {
+  outline: none;
+  white-space: pre-wrap;
+}
+
+.btn {
+  background: #222;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.active-btn {
+  background: #3b82f6;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.logo img {
+  height: 30px;
+  width: auto;
+  display: block;
+}
+/* glass-modal.css */
+.glass-modal {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.nav-col {
+  background-color: #fff;
+  border: 1px solid #954242;
+  border-radius: 10px;
+}
+.pi-div {
+  display: flex;
+  width: 95%;
+  gap: 2%;
+  margin-bottom: 8px;
+  margin-top: 5px;
+}
+.pi-sub-div {
+  display: flex;
+  width: 44%;
+}
+.pi-sub-div svg {
+  width: 20px;
+}
+.pi-label {
+  width: 225px;
+  font-weight: bold;
+  color: #333333;
+}
+.pi-value {
+  /* margin-right: 70px; */
+  color: #555555;
+}
+
+.react-datepicker-wrapper {
+  @apply w-full; /* Applies full width */
+  display: block; /* Ensure it spans the full width */
+}
+
+.detail-values {
+  margin-bottom: 10px;
+  display: flex;
+}
+.s-label {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500;
+  color: #344054;
+  width: 210px;
+}
+.s-value {
+  width: 360px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* Target the last header cell in DataTable */
+.custom-head-cell:last-child {
+  display: flex;
+  justify-content: center;
+}
+
+.nav_container {
+  display: flex;
+  gap: 10px;
+  /* flex-wrap: wrap; */
+  width: 100%;
+}
+.nav_card {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 24px;
+  box-shadow: 0px 0px 4px 0px #00000040;
+}
+.c1 {
+  background: linear-gradient(180deg, #5fd45f 0%, #ffffff 138.48%);
+}
+.c2 {
+  background: linear-gradient(180deg, #be95ff 0%, #ffffff 131.68%);
+}
+.c3 {
+  background: linear-gradient(180deg, #ffa500 0%, #ffffff 145.55%);
+}
+.c4{
+  background: linear-gradient(180deg, #9FFFF9 0%, #FFFFFF 131.68%);
+}
+.c5{
+  background: linear-gradient(180deg, #FFB7B7 0%, #FFFFFF 131.68%);
+}
+.c6{
+  background: linear-gradient(180deg, #FBD04F 0%, #FFFFFF 131.68%);
+}
+.c7{
+  background: linear-gradient(180deg, #5FD45F 0%, #FFFFFF 138.48%);
+}
+.c8{
+  background: linear-gradient(180deg, #E78C8C 0%, #FFFFFF 145.55%);
+}
+.card_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card_content span {
+  color: #344054;
+  padding-left: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.css-sc8y68-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root{
+  height: 40px;
+  border-radius: 10px !important;
+}
+.css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root {
+  top: -8px !important;
+}
+
+.format-cards{
+  width: 23%;
+  height: 22vh;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 1% ;
+  color: #fff;
+  font-size: 22px;
+  box-shadow: 0px 0px 4px 0px #00000040;
+  line-height: 28px;
+}
+
+.ol-listing{
+  padding: 10px 0px 10px 35px;
+  width:50%;
+  background:#e7d9fb;
+  border-radius:10px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #344054;
+}
+.ol-listing ol li{
+margin-bottom: 5px;
+}
+.live-amount{
+  background: #EDEDED;
+  width: 100%;
+height: 87px;
+display: flex;
+align-items: center;
+}
+.credit{
+font-size: 24px;
+font-weight: 400;
+}
+.credit-value{
+font-size: 24px;
+font-weight: 700;
+}
+
+/* Style for the dropdown options */
+.custom-dropdown select {
+  width: auto; /* Ensure the dropdown itself is not stretched */
+  max-width: 300px; /* Adjust the width as per your requirement */
+}
+
+.custom-dropdown select option {
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Add ellipsis for long text */
+  max-width: 180px; /* Adjust to fit within the dropdown's width */
+}
+/* body {
+  user-select: none; 
+  -webkit-user-select: none; 
+  -ms-user-select: none; 
+  -moz-user-select: none; 
+} */
+
+.ol-listing Li :hover{
+color: red;
+}
